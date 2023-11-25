@@ -1,3 +1,195 @@
+@import "./reset.css";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+* {
+    box-sizing: border-box;
+    /* 요소의 width에 여백을 포함 */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* 부드러운 스크롤 */
+}
+
+body {
+    font-size: 16px;
+    font-family: "Pretendard";
+    /* 전체 프로젝트에서 사용할 폰트 설정 */
+    letter-spacing: -0.2px;
+    color: #47494d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100vw;
+    height: 72px;
+    padding: 0 40px;
+    background-color: #ffe494;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 10;
+}
+
+h1 img {
+    width: 131px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+}
+
+main section {
+    padding: 200px 0;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+#home {
+    background-color: #ffe494;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#home .tit-descript {
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+#home .tit-descript strong {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.profile-img {
+    width: 500px;
+}
+
+.scroll-link {
+    position: absolute;
+    bottom: 32px;
+}
+
+main .tit {
+    color: #ff3440;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+#about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#about p {
+    text-align: center;
+}
+
+#about p.descript {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+#about p.additional-info {
+    line-height: 1.4;
+}
+
+#activity {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.activ-list {
+    font-size: 20px;
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+
+.activ-tit {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.activ-img-list {
+    display: flex;
+    gap: 72px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 24px 0;
+}
+
+.activ-img-list img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    width: 80%;
+}
+
+.contact-cont {
+    background-color: #dee8ff;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#contact .tit {
+    font-size: 36px;
+    font-weight: 400;
+    color: inherit;
+}
+
+.contact-cont .descript {
+    width: 80%;
+    line-height: 1.4;
+}
+
+.contact-box {
+    margin-left: auto;
+    display: flex;
+    gap: 24px;
+}
+
+.contact-box div {
+    background-color: #fff;
+    margin-top: 60px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 footer {
     border-top: 1px solid #8d9299;
     width: Calc(100% - 20px);
